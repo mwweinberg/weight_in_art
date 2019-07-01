@@ -26,7 +26,7 @@ offset = 0
 #work through the pages to get all 8902 silver objects with images
 while (offset < 8911):
     print("offset = " + str(offset))
-    working_url = "https://www.vam.ac.uk/api/json/museumobject/search?materialsearch=ivory&limit=30&offset=" + str(offset)
+    working_url = "https://www.vam.ac.uk/api/json/museumobject/search?materialsearch=silver&limit=8905&pad=1&images=" + str(offset)
 
     #creates the json
     with urllib.request.urlopen(working_url) as url:
